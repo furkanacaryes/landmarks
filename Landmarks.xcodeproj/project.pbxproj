@@ -12,6 +12,7 @@
 		DC7C20D7278DFF4A0092DBAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7C20D6278DFF4A0092DBAB /* Assets.xcassets */; };
 		DC7C20DA278DFF4A0092DBAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7C20D9278DFF4A0092DBAB /* Preview Assets.xcassets */; };
 		DC7C20E1278E2E950092DBAB /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7C20E0278E2E950092DBAB /* CircleImage.swift */; };
+		DC7C20E3278E305C0092DBAB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7C20E2278E305C0092DBAB /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		DC7C20D6278DFF4A0092DBAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC7C20D9278DFF4A0092DBAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC7C20E0278E2E950092DBAB /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		DC7C20E2278E305C0092DBAB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				DC7C20D2278DFF460092DBAB /* LandmarksApp.swift */,
 				DC7C20D4278DFF460092DBAB /* ContentView.swift */,
 				DC7C20E0278E2E950092DBAB /* CircleImage.swift */,
+				DC7C20E2278E305C0092DBAB /* MapView.swift */,
 				DC7C20D6278DFF4A0092DBAB /* Assets.xcassets */,
 				DC7C20D8278DFF4A0092DBAB /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC7C20D5278DFF460092DBAB /* ContentView.swift in Sources */,
+				DC7C20E3278E305C0092DBAB /* MapView.swift in Sources */,
 				DC7C20D3278DFF460092DBAB /* LandmarksApp.swift in Sources */,
 				DC7C20E1278E2E950092DBAB /* CircleImage.swift in Sources */,
 			);
