@@ -58,6 +58,7 @@
 		DCC538F6281E8B5B00B750EC /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC538F5281E8B5B00B750EC /* LandmarkDetail.swift */; };
 		DCC538F8281F32BA00B750EC /* LandmarkCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC538F7281F32BA00B750EC /* LandmarkCommands.swift */; };
 		DCC538F9281F32BA00B750EC /* LandmarkCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC538F7281F32BA00B750EC /* LandmarkCommands.swift */; };
+		DCC538FB2820CBAC00B750EC /* LandmarkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC538FA2820CBAC00B750EC /* LandmarkSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 		DCC538F0281E696900B750EC /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		DCC538F5281E8B5B00B750EC /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		DCC538F7281F32BA00B750EC /* LandmarkCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkCommands.swift; sourceTree = "<group>"; };
+		DCC538FA2820CBAC00B750EC /* LandmarkSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +259,7 @@
 				DC9B227E281BD88C00095A25 /* Assets.xcassets */,
 				DC9B2283281BD88C00095A25 /* MacLandmarks.entitlements */,
 				DC9B2280281BD88C00095A25 /* Preview Content */,
+				DCC538FA2820CBAC00B750EC /* LandmarkSettings.swift */,
 			);
 			path = MacLandmarks;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 			files = (
 				DC71E5F4281CC3D3004C478C /* Hike.swift in Sources */,
 				DC9B227D281BD88A00095A25 /* ContentView.swift in Sources */,
+				DCC538FB2820CBAC00B750EC /* LandmarkSettings.swift in Sources */,
 				DCC538E5281E28E300B750EC /* Profile.swift in Sources */,
 				DC9B228A281BD9B800095A25 /* MapView.swift in Sources */,
 				DCC538F9281F32BA00B750EC /* LandmarkCommands.swift in Sources */,
