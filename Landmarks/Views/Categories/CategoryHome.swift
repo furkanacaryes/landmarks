@@ -14,18 +14,18 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
-                modelData.featuredLandmarks[0].image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 200)
-                    .clipped()
-                    .listRowInsets(EdgeInsets())
+                PageView(pages: modelData.featuredLandmarks.map {
+                    FeatureCard(landmark: $0)
+                })
+                .aspectRatio(3/2, contentMode: .fit)
+                .listRowInsets(EdgeInsets())
 
                 ForEach(modelData.categories.keys.sorted(), id: \.self) { categoryTitle in
                     CategoryRow(
                         categoryTitle: categoryTitle,
                         items: modelData.categories[categoryTitle]!
                     )
+                    .padding(.top, 16)
                 }
                 .listRowInsets(EdgeInsets())
             }
@@ -40,7 +40,6 @@ struct CategoryHome: View {
             }
             .sheet(isPresented: $isProfileVisible) {
                 ProfileHost()
-//                    .environmentObject(modelData)
             }
         }
     }
