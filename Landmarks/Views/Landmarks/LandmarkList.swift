@@ -40,6 +40,20 @@ struct LandmarkList: View {
 
     var body: some View {
         NavigationView {
+            #if os(watchOS)
+            List() {
+                ForEach(filteredLandmarks) { landmark in
+                    NavigationLink {
+                        LandmarkDetail(landmark: landmark)
+                    } label: {
+                        LandmarkRow(landmark: landmark)
+                    }
+                    .tag(landmark)
+                }
+            }
+            .navigationTitle(title)
+
+            #else
             List(selection: $selectedLandmark) {
                 ForEach(filteredLandmarks) { landmark in
                     NavigationLink {
@@ -61,7 +75,7 @@ struct LandmarkList: View {
                             }
                         }
                         .pickerStyle(.inline)
-
+                        
                         Toggle(isOn: $showFavoritesOnly) {
                             Text("Show Only Favorites")
                         }
@@ -72,8 +86,11 @@ struct LandmarkList: View {
             }
             
             Text("Select a landmark")
+            #endif
         }
+        #if !os(watchOS)
         .focusedValue(\.selectedLandmark, $modelData.landmarks[selectedLandmarkIndex ?? 0])
+        #endif
     }
 }
 
